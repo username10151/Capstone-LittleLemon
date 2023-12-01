@@ -100,6 +100,11 @@ article img {
     max-width: 100%;
 }
 
+.menu-img{
+    max-width: 50rem;
+    max-height: 30rem;
+}
+
 article ul {
     list-style: none;
 }
@@ -137,7 +142,16 @@ input, select{
     display: block;
     color: #fff;
     line-height: 25px;
-  }
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #6D8577; /* Darker shade on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Bigger shadow on hover for a "lifting" effect */
+    transform: translateY(-2px); /* Slightly raises the button to mimic a button press */
+}
 
 #hero {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/restaurant_inside.jpg');
@@ -255,5 +269,9 @@ footer p {
 
     #button{
         width: 100%;
+    }
+    article img {
+        width: 100%;
+        height: 40%;
     }
   }
